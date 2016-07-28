@@ -15,3 +15,8 @@ sudo apt-get upgrade
 sudo apt-get upgrade nginx
 sudo service nginx restart
 ```
+
+## Mozilla SSL Configuration Generator
+
+Mozilla has a great online [SSL Config Generator](https://mozilla.github.io/server-side-tls/ssl-config-generator/)
+that you can use to get some solid suggestions for your setup (not just nginx).
