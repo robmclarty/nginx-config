@@ -10,6 +10,11 @@ block, per website/app which is being controlled by nginx. These settings are
 different from the global settings found in the main `nginx.conf` file and
 should be tailored to the needs of your website/app.
 
+NOTE: what I mean by "app specific config" is a config file that would live in
+`/etc/nginx/sites-available` which you would link to from
+`/etc/nginx/sites-enabled`. The main `nginx.conf` will automatically load
+anything that's in `sites-enabled` ;)
+
 I find that using nginx in front of my (in my case, Nodejs) applications is a
 really great (read: feature-rich, performant, and easy-to-setup) solution for
 handling low to decently-sized loads that helps me hit the ground running. When
